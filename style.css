@@ -1,0 +1,76 @@
+:root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(./zom.jpg);
+    margin: 0;
+}
+
+.box {
+    width: 500px;
+    background-color: whitesmoke;
+    height: 500px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+h1 {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff, #00ffff);
+    background-size: 200% 200%;
+    animation: gradient 4s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-align: center;
+    font-size: 48px;
+}
+h2 {
+    display: inline-block;
+    color: black;
+}
+
+#inpt {
+    display: inline-block;
+    margin: 1px solid;
+    font-weight: 900;
+    color: yellowgreen;
+    text-align: center;
+    font-size: 18px;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {height: 50px;
+    width: 100px;
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    border: none;
+    
+  }
+  .btn:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
